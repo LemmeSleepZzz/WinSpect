@@ -48,7 +48,7 @@ Malformed or malicious PE files are a real input class. Several explicit validat
 ## Build
  
 ```
-gcc -o winspect main.c pe_parser.c -I.
+gcc main.c -o winspect
 ```
  
 ## Usage
