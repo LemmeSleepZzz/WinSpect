@@ -61,15 +61,61 @@ winspect <path to binary>
  
 ```
 Program is x64 architecture (64 Bit)
-Address Of Entry Point: 0x1234
+Address Of Entry Point: 0x13C0
 Section: .text
+Section: fothk
 Section: .rdata
 Section: .data
+Section: .pdata
+Section: .rsrc
+Section: .reloc
 DLL: KERNEL32.dll
-  Function: VirtualAlloc
-  Function: LoadLibraryA
-DLL: ntdll.dll
-  Function: NtQuerySystemInformation
+  Function: HeapSetInformation
+  Function: FileTimeToLocalFileTime
+  Function: GetTimeFormatW
+  Function: GetModuleHandleW
+  Function: GetDateFormatW
+  Function: FileTimeToSystemTime
+DLL: USER32.dll
+  Function: LoadStringW
+DLL: msvcrt.dll
+  Function: _commode
+  Function: _fmode
+  Function: _wcmdln
+  Function: memset
+  Function: _XcptFilter
+  Function: ?terminate@@YAXXZ
+  Function: _initterm
+  Function: __setusermatherr
+  Function: _cexit
+  Function: _exit
+  Function: exit
+  Function: __set_app_type
+  Function: __wgetmainargs
+  Function: _amsg_exit
+  Function: __C_specific_handler
+DLL: api-ms-win-core-synch-l1-2-0.dll
+  Function: Sleep
+DLL: api-ms-win-core-processthreads-l1-1-0.dll
+  Function: GetCurrentProcess
+  Function: TerminateProcess
+  Function: GetCurrentProcessId
+  Function: GetStartupInfoW
+  Function: GetCurrentThreadId
+DLL: api-ms-win-core-errorhandling-l1-1-0.dll
+  Function: SetUnhandledExceptionFilter
+  Function: UnhandledExceptionFilter
+DLL: api-ms-win-core-profile-l1-1-0.dll
+  Function: QueryPerformanceCounter
+DLL: api-ms-win-core-sysinfo-l1-1-0.dll
+  Function: GetTickCount
+  Function: GetSystemTimeAsFileTime
+DLL: api-ms-win-core-rtlsupport-l1-1-0.dll
+  Function: RtlLookupFunctionEntry
+  Function: RtlVirtualUnwind
+  Function: RtlCaptureContext
+DLL: SHELL32.dll
+  Function: ShellAboutW
 ```
  
 ---
